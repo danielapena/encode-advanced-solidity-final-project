@@ -4,6 +4,11 @@
 
 Future Heritage Automation is a Solidity-based project that leverages Chainlink's decentralized automation to facilitate the automatic transfer of heritage tokens at a specified future time. This project is built using the Hardhat development environment and utilizes OpenZeppelin's upgradeable contracts.
 
+## Goal of the project
+
+- Get comfortable with upgradeable contract standards
+- Play with DePin projects
+
 ## Features
 
 - **Automated Token Transfers**: Schedule future token transfers that are automatically executed by Chainlink's decentralized automation.
