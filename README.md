@@ -1,4 +1,4 @@
-# Encode Solidity Final Project - Future Heritage Token Automation
+# Encode Advanced Solidity Final Project - Future Heritage Token Automation
 
 ## Overview
 
