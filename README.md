@@ -59,9 +59,10 @@ An interface for the ERC721 token contract with additional locking functionality
 
 1. Deploy ERC721 contract
 2. Deploy Future Transfer contract with ERC721 in the constructor
-3. Setup Chainlink automation with Future Transfer contract
-4. Mint a token (`safeMint`).
-5. As token owner, authorize Future Transfer protocol to transfer token on behalf of (`setApprovalForAll`).
-6. As the token owner, setup a future transfer (`createFutureTransfer(address to, uint256 tokenId, uint256 transferTime)`)
-7. When the time condition is met, the automation will automatically call the action, and automatically transfer the token.
+3. From the ERC721 contract, grant role of `TOKEN_OPERATOR_ROLE` to the Future Transfer contract
+4. Setup Chainlink automation with Future Transfer contract
+5. Mint a token (`safeMint`).
+6. As token owner, authorize Future Transfer protocol to transfer token on behalf of (`setApprovalForAll`).
+7. As the token owner, setup a future transfer (`createFutureTransfer(address to, uint256 tokenId, uint256 transferTime)`)
+8. When the time condition is met, the automation will automatically call the action, and automatically transfer the token.
 
