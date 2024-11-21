@@ -55,3 +55,13 @@ The main contract responsible for scheduling and executing future token transfer
 
 An interface for the ERC721 token contract with additional locking functionality.
 
+## Execution steps
+
+1. Deploy ERC721 contract
+2. Deploy Future Transfer contract with ERC721 in the constructor
+3. Setup Chainlink automation with Future Transfer contract
+4. Mint a token (`safeMint`).
+5. As token owner, authorize Future Transfer protocol to transfer token on behalf of (`setApprovalForAll`).
+6. As the token owner, setup a future transfer (`createFutureTransfer(address to, uint256 tokenId, uint256 transferTime)`)
+7. When the time condition is met, the automation will automatically call the action, and automatically transfer the token.
+
