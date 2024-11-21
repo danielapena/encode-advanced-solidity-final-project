@@ -1,4 +1,4 @@
-# Future Heritage Automation
+# Encode Solidity Final Project - Future Heritage Automation
 
 ## Overview
 
